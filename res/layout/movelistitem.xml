@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:text="Bulbasaur"
+        android:id="@+id/name"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:layout_height="48sp"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        />
+    
+    <TextView
+        android:textSize="10sp"
+        android:id="@+id/t2"
+        android:layout_width="60dp"
+        android:layout_height="24sp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:textColor="#fff"
+        android:text="PHYSICAL"
+        android:background="#332233"
+        android:gravity="center_vertical|center_horizontal"
+        />
+    
+    <TextView
+        android:text="PHYSICAL"
+        android:textSize="10sp"
+        android:id="@+id/t1"
+        android:layout_width="60dp"
+        android:layout_height="24sp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:layout_toLeftOf="@+id/t2"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:background="#ff2222"
+        android:textColor="#fff"
+        android:gravity="center_vertical|center_horizontal"
+        />
+
+</RelativeLayout>

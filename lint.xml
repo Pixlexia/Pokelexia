@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DefaultLocale" severity="ignore">
+        <ignore path="src\com\pixlexia\pokelexia\PokemonAdapter.java" />
+    </issue>
+    <issue id="HardcodedText">
+        <ignore path="res\layout\activity_home.xml" />
+    </issue>
+    <issue id="NewApi" severity="ignore" />
+</lint>

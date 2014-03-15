@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pokelexia</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_pokelist">Pokelist</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_favorites">Favorites</string>
+    <string name="title_activity_pokemon_page">PokemonPage</string>
+    <string name="title_activity_item_list">ItemList</string>
+    <string name="title_activity_abilities">Abilities</string>
+    <string name="title_activity_moves">Moves</string>
+
+</resources>

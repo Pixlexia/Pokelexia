@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".PokemonPage" >
+    
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/pokeinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border"
+        android:layout_alignParentTop="true">
+
+	    <ImageView
+	        android:id="@+id/pokemonimg"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/favebutton"
+	        android:layout_marginTop="20dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="20dp"/>
+        
+        <TextView
+            android:id="@+id/pokenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="#aaa"
+            android:text="#000" />
+        
+        <TextView
+            android:id="@+id/pokename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pokenum"
+            android:layout_alignLeft="@+id/pokenum"
+            android:textSize="24dp"
+            android:text="Pokemon name" />
+	        
+	    <TextView
+	        android:id="@+id/t1"
+	        android:textSize="10sp"
+	        android:layout_width="60dp"
+	        android:layout_height="24sp"
+	        android:paddingLeft="4dp"
+	        android:paddingRight="4dp"
+	        android:layout_below="@+id/pokename"
+            android:layout_alignLeft="@+id/pokename"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="10dp"
+	        android:background="#e12f2f"
+	        android:textColor="#fff"
+	        android:gravity="center_vertical|center_horizontal"
+	        />
+
+	    <TextView
+	        android:id="@+id/t2"
+	        android:layout_width="60dp"
+	        android:layout_height="24sp"
+	        android:layout_toRightOf="@+id/t1"
+	        android:layout_alignTop="@+id/t1"
+	        android:background="#e12f2f"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:paddingLeft="4dp"
+	        android:paddingRight="4dp"
+	        android:textColor="#fff"
+	        android:textSize="10sp" />
+	    
+	    <TextView
+	        android:id="@+id/labelheight"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/t1"
+	        android:layout_alignLeft="@+id/t1"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:textColor="#aaa"
+	        android:textSize="14sp"
+	        android:text="Height" />
+	    
+	    <TextView
+	        android:id="@+id/height"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/labelheight"
+	        android:layout_alignTop="@+id/labelheight"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="14sp"
+	        android:text="5.2 m" />
+	    
+	    <TextView
+	        android:id="@+id/labelweight"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/labelheight"
+	        android:layout_alignRight="@+id/labelheight"
+	        android:layout_marginTop="4dp"
+	        android:textColor="#aaa"
+	        android:textSize="14sp"
+	        android:text="Weight" />
+	    
+	    <TextView
+	        android:id="@+id/weight"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/labelweight"
+	        android:layout_alignTop="@+id/labelweight"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="14sp"
+	        android:text="20 kg" />
+	    
+	    <TextView
+	        android:id="@+id/labelevs"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/labelweight"
+	        android:layout_alignRight="@+id/labelweight"
+	        android:layout_marginTop="4dp"
+	        android:textColor="#aaa"
+	        android:textSize="14sp"
+	        android:text="EVs" />
+	    
+	    <TextView
+	        android:id="@+id/evs"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/labelevs"
+	        android:layout_alignTop="@+id/labelevs"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="14sp"
+	        android:text="1 Sp. Attack" />
+	    
+	    <TextView
+	        android:id="@+id/labelabilities"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/labelevs"
+	        android:layout_alignRight="@+id/labelevs"
+	        android:layout_marginTop="4dp"
+	        android:textColor="#aaa"
+	        android:textSize="14sp"
+	        android:text="Abilities" />
+	    
+	    <TextView
+	        android:id="@+id/abilities"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/labelabilities"
+	        android:layout_alignTop="@+id/labelabilities"
+	        android:layout_marginLeft="10dp"
+	        android:paddingBottom="10dp"
+	        android:textSize="14sp"
+	        android:text="Overgrowth" />
+
+	    <ImageButton
+	        android:id="@+id/favebutton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="3dp"
+	        android:layout_marginLeft="3dp"
+	        android:background="#ffffff"
+	        android:onClick="favorite"
+	        android:src="@drawable/graystar" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:text="Weaknesses"
+        android:id="@+id/weaknesschart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pokeinfo"
+        android:background="@drawable/border"
+        android:paddingBottom="20dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/labelweaknesses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="DAMAGE WHEN ATTACKED" />
+        
+        <RelativeLayout
+            android:id="@+id/column1"
+       		android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/labelweaknesses">  
+            
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/column2"
+       		android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/labelweaknesses">
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:text="Evolutions"
+        android:id="@+id/evolutions"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weaknesschart">
+        <TextView
+            android:id="@+id/labelevolution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="EVOLUTION" />
+        
+        <TextView
+            android:id="@+id/labelevofrom"
+            android:layout_below="@+id/labelevolution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="#ccc" 
+            android:textSize="10sp" 
+            android:text="EVOLVES FROM" />
+
+        <TextView
+            android:id="@+id/levelfrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelevofrom"
+            android:gravity="center"
+            android:text="N/A" />
+        
+        <ImageView
+            android:id="@+id/imgEvofrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/levelfrom"
+            android:onClick="gotoEvoFrom"
+            android:layout_centerHorizontal="true"/>
+        
+        <TextView
+            android:id="@+id/labelevoto"
+            android:layout_below="@+id/imgEvofrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="#ccc"
+            android:textSize="10sp" 
+            android:text="EVOLVES TO" />
+        
+        <TextView
+            android:id="@+id/levelto"
+            android:layout_below="@+id/labelevoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="N/A" />
+        
+        <ImageView
+            android:id="@+id/imgEvoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/levelto"
+            android:onClick="gotoEvoTo"
+            android:layout_centerHorizontal="true"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:text="1"
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="48sp"
+        android:gravity="center_vertical"
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft="10sp"
+        android:textSize="16sp"
+        android:textColor="#bbb"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:text="Bulbasaur"
+        android:id="@+id/name"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:layout_height="48sp"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        />
+    
+    <TextView
+        android:textSize="10sp"
+        android:id="@+id/t2"
+        android:layout_width="60dp"
+        android:layout_height="24sp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:textColor="#fff"
+        android:gravity="center_vertical|center_horizontal"
+        />
+    
+    <TextView
+        android:textSize="10sp"
+        android:id="@+id/t1"
+        android:layout_width="60dp"
+        android:layout_height="24sp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:layout_toLeftOf="@+id/t2"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:background="#e12f2f"
+        android:textColor="#fff"
+        android:gravity="center_vertical|center_horizontal"
+        />
+    
+</RelativeLayout>
